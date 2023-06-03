@@ -643,10 +643,10 @@ body {
   background: url("../img/icons/arrow.png") 50%/100% no-repeat; }
 
 .contacts__socials::before {
-  width: 12rem;
-  height: 10.8125rem;
+  width: 9.375rem;
+  height: 9.25rem;
   left: 90%;
-  bottom: 0;
+  bottom: 0.9375rem;
 }
 
 .contacts__social {
@@ -1092,8 +1092,8 @@ body {
 
   .contacts__content::after {
     content: "";
-    width: 12rem;
-    height: 10.8125rem;
+    width: 9.375rem;
+    height: 9.25rem;
     position: absolute;
     bottom: 100%;
     left: -3.75rem;
@@ -1133,7 +1133,7 @@ body {
 
   .item-services__image_2 {
     position: absolute;
-    bottom: 55%;
+    top: -15rem;
     right: -2.5rem;
     z-index: -1;
     -webkit-transform: scale(0.6);
