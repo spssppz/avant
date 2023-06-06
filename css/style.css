@@ -509,9 +509,9 @@ body {
   width: 59.375rem;
   height: 41.25rem;
   top: 25%;
-  left: -20.625rem;
-  -webkit-filter: blur(3.125rem);
-          filter: blur(3.125rem);
+  left: -22.5rem;
+  -webkit-filter: blur(6.25rem);
+          filter: blur(6.25rem);
   position: absolute;
 }
 
@@ -607,13 +607,13 @@ body {
 .item-services__image_1::after {
   content: "";
   position: absolute;
-  top: 0;
-  left: 10%;
-  width: 100%;
+  top: -5%;
+  left: -10%;
+  width: 135%;
   z-index: -1;
-  -webkit-filter: blur(5rem);
-          filter: blur(5rem);
-  height: 100%;
+  -webkit-filter: blur(6.25rem);
+          filter: blur(6.25rem);
+  height: 135%;
 }
 
 .contacts__body {
@@ -1179,10 +1179,10 @@ body {
   }
 
   .item-services__image_1::after {
-    width: 150%;
-    height: 150%;
-    left: -17%;
-    top: -13%;
+    width: 160%;
+    height: 160%;
+    left: -20%;
+    top: -16%;
   }
 
   .item-services__image_1 {
