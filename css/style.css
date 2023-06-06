@@ -196,6 +196,9 @@ body {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   line-height: 1.5;
+  -webkit-transition: color 0.3s ease 0s;
+  -o-transition: color 0.3s ease 0s;
+  transition: color 0.3s ease 0s;
 }
 
 .menu__socials {
@@ -366,10 +369,17 @@ body {
   padding: 1.5rem 2.25rem;
   background: #ffc52f;
   border-radius: 1.5625rem;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
 }
 
 .hero__btn:not(:last-child) {
   margin-right: 1.5rem;
+}
+
+.hero__btn:focus {
+  background: #f1b51b;
 }
 
 .hero__subtitle {
@@ -397,6 +407,19 @@ body {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 22.5rem;
           flex: 0 1 22.5rem;
+}
+
+.hero__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .hero__item {
@@ -507,6 +530,7 @@ body {
   font-weight: 700;
   font-size: 4rem;
   line-height: 1.09375;
+  white-space: nowrap;
 }
 
 .item-services__title:not(:last-child) {
@@ -515,6 +539,7 @@ body {
 
 .item-services__title span {
   color: #ffc52f;
+  display: block;
 }
 
 .item-services__title_mob {
@@ -679,9 +704,10 @@ body {
   overflow: hidden;
 }
 
-.contacts__social-link img {
-  width: 100%;
-  height: 100%;
+.contacts__social-link svg path {
+  -webkit-transition: fill 0.3s ease 0s;
+  -o-transition: fill 0.3s ease 0s;
+  transition: fill 0.3s ease 0s;
 }
 
 @media (min-width: 47.99875em) {
@@ -842,6 +868,10 @@ body {
   .item-services__title {
     font-size: 2.25rem;
     text-align: center;
+  }
+
+  .item-services__title span {
+    display: inline;
   }
 
   .item-services__subtitle {
@@ -1081,6 +1111,10 @@ body {
     font-size: 2rem;
   }
 
+  .item-services__title span {
+    display: block;
+  }
+
   .item-services__title_desk {
     display: none;
   }
@@ -1194,6 +1228,20 @@ body {
     -webkit-transform: scale(0.6);
         -ms-transform: scale(0.6);
             transform: scale(0.6);
+  }
+}
+
+@media (any-hover: hover) {
+  .menu__link:hover {
+    color: #ffc52f;
+  }
+
+  .hero__btn:hover {
+    background: #ffcb46;
+  }
+
+  .contacts__social-link:hover svg path {
+    fill: #363636;
   }
 }
 
